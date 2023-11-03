@@ -87,7 +87,7 @@ socket.on('roomList', ({ rooms }) => {
 function showUsers(users) {
     usersList.textContent = ''
     if (users) {
-        usersList.innerHTML = `<em>Users in ${chatRoom.value}:</em>`
+        usersList.innerHTML = `<em>Utilisateurs dans le salon ${chatRoom.value}:</em>`
         users.forEach((user, i) => {
             usersList.textContent += ` ${user.name}`
             if (users.length > 1 && i !== users.length - 1) {
